@@ -1,3 +1,6 @@
+'''
+base.py is renamed from settings.py after startproject.
+'''
 from .base import *
 
 # Enable DEBUG during development
