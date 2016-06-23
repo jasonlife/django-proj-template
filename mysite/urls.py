@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.views.generic import TemplateView
+
+
+class MockUp(TemplateView):
+    def get_context_data(self, **kwargs):
+        self.template_name = self.kwargs["template_name"]
+        return super(MockUp, self).get_context_data(**kwargs)
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^(?P<template_name>.*)$', MockUp.as_view()),
 ]
