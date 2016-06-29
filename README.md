@@ -18,7 +18,7 @@ Install all dependencies:
 Create new local git branch for your project and run migrations:
 
     $ git checkout -b <project_name>
-    $ git migrations
+    $ python manage.py migrate
 
 Initial test, localhost:8000/index.html:
 
