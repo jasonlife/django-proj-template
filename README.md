@@ -18,9 +18,9 @@ Install all dependencies:
 Create new local git branch for your project and run migrations:
 
     $ git checkout -b <project_name>
+    $ cp local.env.sample local.env
     $ python manage.py migrate
 
 Initial test, localhost:8000/index.html:
 
     $ python manage.py runserver
-
