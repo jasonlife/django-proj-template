@@ -8,3 +8,6 @@ from .base import *
 
 # Disable DEBUG during production
 DEBUG = False
+
+# Define STATIC_ROOT for the collectstatic command
+STATIC_ROOT = join(dirname(BASE_DIR), 'site', 'static')
