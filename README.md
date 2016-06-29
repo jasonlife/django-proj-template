@@ -1,8 +1,7 @@
 # django-proj-template
-Preparing starting point quickly for a new Django project. This provides the
-facility for prototyping (Mockup) of your web pages using TemplateView.
+Quick preparation for a new Django project. Generating Mockups for new webpages is easy with TemplateView.
 
-Creating Mockup is not going to be a waste of time using this.
+Simply create html file in *templates* directory. Django template can be used during the prototyping. No waste of time.
 
 ## Quick start
 After cloning this repo, prepare your development environment.
